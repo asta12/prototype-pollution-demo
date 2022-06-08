@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .square {
+            height: 50px;
+            width: 50px;
+            background-color: square_color;
+        }
+        .circle {
+            height: 50px;
+            width: 50px;
+            background-color: circle_color;
+            border-radius: 50%;
+        }
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-bottom: 50px solid triangle_color;
+        }
+    </style>
+    <h1>Color the shapes!</h1>
+    <p>Choose the color for the shapes here:</p>
+    <div style="display:flex">
+        <div class="square"></div>
+        <div class="circle"></div>
+        <div class="triangle"></div>
+    </div>
+    <form method="post">
+        <textarea name="thetext" id="config" rows="10" cols="50">{&#13;&#10;  "circle": "#0000FF",&#13;&#10;  "square": "#00FFFF",&#13;&#10;  "triangle": "#FF7F50"&#13;&#10;}</textarea><br>
+        <input type="submit" value="Color!">
+    </form>
+</html>
